@@ -38,16 +38,16 @@ class _NewAppState extends State<NewApp> {
         children: [
 
           TextFormField(
-            controller: nameController,
+            controller: nameController,//this value goto Second Screen Constuctor
             decoration: InputDecoration(
               hintText: "Enter Your Data"
             ),
           ),
 
           ElevatedButton(onPressed: (){
-
+//-----------------------------------------------------Go to Second Screen with data
             Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondScreen(name: nameController.text,)));
-
+//-------------------------------------------------------------------------------------------------------------------
 
           }, child: Text("Click me go to Second Screen with your data")),
 
