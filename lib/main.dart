@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pass_data/second_screen.dart';
 void main(){
+
+  //----------------------------------- You only read my commented line
+
   runApp(MyApp());
 }
 class MyApp extends StatefulWidget {
