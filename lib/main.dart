@@ -45,8 +45,12 @@ class _NewAppState extends State<NewApp> {
           ),
 
           ElevatedButton(onPressed: (){
-//-----------------------------------------------------Go to Second Screen with data
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondScreen(name: nameController.text,)));
+//----------------------------------------------------- You need Go to Second Screen with data add below line
+
+
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondScreen(data: nameController.text,)));
+
+
 //-------------------------------------------------------------------------------------------------------------------
 
           }, child: Text("Click me go to Second Screen with your data")),
